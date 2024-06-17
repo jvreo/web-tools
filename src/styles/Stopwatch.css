@@ -1,0 +1,80 @@
+.container-watch {
+  color: var(--white);
+  word-wrap: break-word;
+}
+
+.display-watch  {
+  font-size: 10rem;
+  font-weight: var(--normal); 
+  color: var(--white);
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.return-home{
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 50%);
+  grid-template-rows: 40px 
+}
+
+.watch-buttons{
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 40px 150px; 
+}
+
+.watch-buttons > button{
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.watch-buttons > button#start-stop{
+  align-items: end;
+  grid-row: 1;
+  border: 0.1px solid var(--green);
+  background-color: var(--green);
+  color: var(--light-green);
+}
+.watch-buttons > button#stop-start{
+  align-items: end;
+  grid-row: 1;
+  border: 0.1px solid var(--red);
+  background-color: var(--red);
+  color: var(--light-red);
+}
+
+.watch-buttons > button#start-stop:hover{
+  border: 0.1px solid var(--dark-green);
+  background-color: var(--dark-green);
+}
+.watch-buttons > button#stop-start:hover{
+  border: 0.1px solid var(--dark-red);
+  background-color: var(--dark-red);
+}
+
+.watch-buttons > button#reset{
+  align-items: start;
+  grid-row: 1;
+  border: 0.1px solid var(--gray);
+  background-color: var(--gray);
+  color: var(--light-gray);
+}
+
+.watch-buttons > button#reset:hover{
+  border: 0.1px solid var(--dark-gray);
+  background-color: var(--dark-gray);
+}
+
+.watch-buttons > hr{
+  color: var(--white);
+  width: 60%;
+  grid-row: 2;
+  grid-column: 1/3;
+
+}

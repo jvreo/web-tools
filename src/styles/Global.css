@@ -1,0 +1,68 @@
+:root {
+  /* Paleta de Cores */
+
+  --white:#fff;
+  --black: #000;
+  --light-green: #07d30e;
+  --green: #29802c;
+  --dark-green: #29802cad;
+  --blue: #2997c2;
+  --red: #ac3131;
+  --dark-red: #ac3131d8;
+  --light-red: #db2323;
+  --background: #1d1d1d;
+  --light-gray: #a1a1a1;
+  --gray: #353535d8; 
+  --dark-gray: #272727d8; 
+  
+  /* Font Size */
+
+  --normal: 400 1rem 'Poppins', sans-sarif;
+  --bold: 600 1rem 'Poppins', sans-sarif bold;
+}
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+  /* CSS Barra de Rolagem */
+  scrollbar-width: thin;
+}
+
+*html{
+    scroll-behavior: smooth;
+}
+
+::selection{
+  background: var(--blue);
+  color:var(--white);
+  border: none;
+}
+
+body {
+  background-color: var(--background);
+}
+
+button{
+  cursor: pointer;
+}
+
+body, button, input{
+  font: var(--normal);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--link);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+  border-radius: 20px;
+  border: 3.5px solid var(--white);
+}
